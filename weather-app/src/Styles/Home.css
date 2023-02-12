@@ -1,0 +1,373 @@
+* {
+
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+
+
+/* ========================================================================>
+              
+               reusable code
+
+   ========================================================================>    */
+
+
+/* ==========================================>
+     
+         reusable colors
+
+   ==========================================> */
+
+/* //find the colors for project
+   //create structure   */
+
+
+:root {
+
+  --solid-black: black;
+  --black: #212529;
+  --para-tint: grey;
+  --helper: rgb(130, 130, 192);
+
+  --main: royalblue;
+  --white: white;
+
+
+
+  --box-shadow: 2px 2px 5px 5px var(--black)
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================>
+         grid structure
+
+   ==========================================> */
+
+
+.grid {
+
+  display: grid;
+  gap: 2rem;
+
+}
+
+
+.grid-one-column {
+
+  grid-template-columns: 1fr;
+  place-items: center;
+
+}
+.grid-two-column {
+
+  grid-template-columns: repeat(2, 1fr);
+
+}
+
+.grid-three-column {
+
+  grid-template-columns: repeat(3, 1fr);
+
+}
+
+.grid-four-column {
+
+  grid-template-columns: repeat(4, 1fr);
+
+}
+
+
+
+
+
+
+
+/* ==========================================>
+          container / Button reusable code
+
+   ==========================================> */
+.section {
+
+  padding: 2.8rem 0;
+}
+
+
+.container {
+
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.btn {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 1rem;
+  background-color: var(--helper);
+  width: 5.8rem;
+  height: 1.8rem;
+  border-radius: 20px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  transition: all 0.5ms linear;
+  
+}
+
+ .btn:hover{
+  box-shadow: 5px 5px 5px var(--black);
+  transform: translateY(-50%);
+ }
+
+
+
+
+span{
+
+  color: var(--helper);
+  font-size: 2.2rem;
+}
+
+
+
+
+
+
+
+/* ==========================================>
+      font style 
+
+   ==========================================> */
+
+h1 {
+  
+  font-size: 1.2rem;
+}
+
+a {
+
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 0.8rem;
+  color: var(--black);
+
+  /* select the color-scheme */
+}
+ p{
+  
+  font-size: 0.8rem;
+
+
+ }
+
+ h5{
+  text-transform: capitalize;
+ }
+
+
+
+
+
+
+
+
+
+
+
+
+/* ==========================================>
+      animation section
+
+   ==========================================> */
+
+   .logo{
+
+    transition: all linear;
+    animation: logo-spin 10s infinite;
+   }
+
+
+
+
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+/* ==========================================>
+      others
+
+   ==========================================> */
+
+/* =====================>
+
+header section
+=====================> */
+
+.header{
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  justify-content: flex-end;
+  margin: 2rem 3rem;
+}
+
+
+
+
+
+
+/* ------------------->navbar flex */
+
+
+
+
+
+
+
+
+
+
+/* =====================>
+
+   main section
+
+=====================> */
+
+
+
+
+.section-hero .grid-two-column {
+
+  place-items: center;
+}
+ 
+.section-hero{
+
+  display: flex;
+  align-items: center;
+  margin: 2rem 2rem;
+}
+
+.section-hero img{
+
+width: 50%;
+}
+
+
+
+
+/* =====================>
+
+   footer section
+
+=====================> */
+.section-footer-address {
+
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 1rem;
+
+
+}
+
+.section-footer{
+  background-color:rgb(65, 153, 65) ;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+
+ .main{
+
+  margin-bottom: 4.1rem;
+ }
+
+
+
+.section-footer-links{
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.section-footer-address{
+
+  font-style: normal;
+}
+
+.section-footer .grid-three-column{
+
+
+    gap: 1rem;
+}
+
+
+html,body{
+  overflow: hidden;
+  background-color: rgb(228, 231, 241);
+}
+
+
+
+
+
+
+
+
+/* ========================> */
+
+.about-image{
+width: 25vw;
+height: 70vh;
+box-shadow: 10px -10px 5px var(--helper); 
+
+
+
+}
+
+.section-about{
+  margin: 3rem 12rem;
+
+
+}
+
+.section-about .grid-two-column{
+
+  align-items: center;
+}
+
+.section-about h2{
+
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: xx-large;
+}
